@@ -86,7 +86,7 @@ module.exports = React.createClass({
 
           return <div className="timezone-people-column" key={"column-" + idx}>
             {column.map(function(person, idx) {
-              var key = person.tz + idx;
+              var key = person.city + idx;
               return <Person model={person} key={key} />;
             })}
           </div>
